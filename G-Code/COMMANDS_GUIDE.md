@@ -28,4 +28,26 @@ Using `M140`  will set the temperature expected for the print bed and continue p
 
 Using `M190` will set the temperature expected for the print bed and pause until the print bed temperature is reached, very similarly to `M109`.
 
+## `M106` - Setting Fan Speed
+
+`M106` uses numbers from 0 to 255 to determine the speed of the fan. When not provided with any number, it will cause the fan to go at the maximum speed. For example:
+
+```M106 S255``` sets the fan to full power
+
+```M106``` sets the fan to full power
+
+```M106 S128``` sets the fan to half power
+
+```M106 S0``` turns off the fan
+
+## `M107` - Turning Off The Fan
+
+`M107` behaves very similarly to `M106 S0` in that it simply turns the fan off.
+
+## `M84` - Disable Steppers
+
+`M84` is very important as it will disable the stepper motors, allowing the extruder and carriage to be moved by hand. 
+
+Simply running ```M84``` will disable all stepper motors, while running ```M84 X Y``` will specifically disable the stepper motors for the X and Y axes. This same behavior can be used with all axes.
+
 ## More information to come very soon!
