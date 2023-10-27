@@ -1,4 +1,4 @@
-# Commands
+# G Commands
 
 ## `G00` - Rapid Positioning
 
@@ -27,6 +27,8 @@ This `G92` command is used to set all axis and other values to 0 after the homin
 To zero the position, you will run this command: ```G92 X0 Y0 Z0```
 
 Use this command to zero for the extruder: ```G92 E0```
+
+# M Commands
 
 ## `M104` or `M109` - Setting Temperature of Nozzle
 
