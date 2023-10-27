@@ -1,3 +1,17 @@
+# Commands
+
+## `G00` - Rapid Positioning
+
+The `G00` command creates a linear motion to the position specified in a command like the one given below, moving at the fastest speed possible. This is typically used for starting processes.
+
+```G00 X5 Y12``` is a command to move to the coordinate (5,12) at the fastest speed the system will allow.
+
+## `G01` - Linear Approximation
+
+The `G01` is a command that will create a linear motion to the specified coordinate, but with a specified speed using the `F` value. An example command can be seen below: 
+
+```G01 X5 Y12 F200``` is a command that will move the extruder to (5,12) in a linear motion with a speed of 200 (mm/min in this case).
+
 ## `G28` - Homing Sequence
 
 The `G28` command is critical for startup processes, as it will cause the position that is reached there will be used as the zero point for sensors to enable the precision that is needed in a 3D printer.
@@ -51,3 +65,8 @@ Using `M190` will set the temperature expected for the print bed and pause until
 Simply running ```M84``` will disable all stepper motors, while running ```M84 X Y``` will specifically disable the stepper motors for the X and Y axes. This same behavior can be used with all axes.
 
 ## More information to come very soon!
+
+# Sources
+
+- https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/
+- https://www.youtube.com/watch?v=2TByiMNduss&pp=ygUOZ2NvZGUgY29tbWFuZHM%3D
